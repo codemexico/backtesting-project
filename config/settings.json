@@ -1,0 +1,50 @@
+{
+    "tickers": {
+        "magnificent_7": ["NVDA", "AAPL", "MSFT", "META", "GOOGL", "TSLA", "AMZN"],
+        "industrials": ["GE", "HD"]
+    },
+    "data": {
+        "start_date": "2022-01-01",
+        "end_date": "auto"
+    },
+    "backtest": {
+        "initial_capital": 100000.0,
+        "commission": 0.001,
+        "position_size_pct": 0.95,
+        "risk_free_rate": 0.04
+    },
+    "indicators": {
+        "sma_fast": 20,
+        "sma_slow": 50,
+        "ema_fast": 12,
+        "ema_slow": 26,
+        "rsi_period": 14,
+        "rsi_oversold": 30,
+        "rsi_overbought": 70,
+        "macd_fast": 12,
+        "macd_slow": 26,
+        "macd_signal": 9,
+        "bb_window": 20,
+        "bb_num_std": 2.0,
+        "bb_squeeze_lookback": 120
+    },
+    "combined_strategies": {
+        "macd_rsi": {
+            "rsi_low": 40,
+            "rsi_high": 60
+        },
+        "sma_bb": {
+            "pctb_buy_threshold": 0.3,
+            "pctb_sell_threshold": 0.7
+        },
+        "triple": {
+            "rsi_buy_cap": 70,
+            "rsi_sell_floor": 30
+        }
+    },
+    "output": {
+        "results_dir": "results",
+        "metrics_subdir": "metrics",
+        "trades_subdir": "trades"
+    }
+}
