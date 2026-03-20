@@ -10,7 +10,7 @@ Proyecto semestral desarrollado en el Tecnológico de Monterrey para el curso **
 - validar dichas señales contra TradingView,
 - y sentar la base para backtesting comparativo de estrategias.  
 
-El universo de análisis incluye las **7 Magníficas** y dos empresas industriales seleccionadas: **NVDA, AAPL, MSFT, META, GOOGL, TSLA, AMZN, GE y HD**. :contentReference[oaicite:2]{index=2} :contentReference[oaicite:3]{index=3}
+El universo de análisis incluye las **7 Magníficas** y dos empresas industriales seleccionadas: **NVDA, AAPL, MSFT, META, GOOGL, TSLA, AMZN, GE y HD**
 
 ---
 
@@ -18,24 +18,24 @@ El universo de análisis incluye las **7 Magníficas** y dos empresas industrial
 
 Este repositorio busca integrar en un solo flujo de trabajo:
 
-1. **Arquitectura modular de backtesting**, con separación clara entre adquisición de datos, indicadores, generación de señales, simulación, métricas y reportes. :contentReference[oaicite:4]{index=4} :contentReference[oaicite:5]{index=5}
+1. **Arquitectura modular de backtesting**, con separación clara entre adquisición de datos, indicadores, generación de señales, simulación, métricas y reportes. 
 2. **Implementación de indicadores técnicos estándar**:  
    - SMA  
    - EMA  
    - RSI  
    - MACD  
-   - Bollinger Bands :contentReference[oaicite:6]{index=6} :contentReference[oaicite:7]{index=7}
+   - Bollinger Bands : 
 3. **Generación de señales programáticas** mediante estrategias basadas en:
    - cruces SMA,
    - reversión a la media con RSI,
-   - cruces MACD. :contentReference[oaicite:8]{index=8} :contentReference[oaicite:9]{index=9}
-4. **Validación visual y comparativa con TradingView** para verificar coincidencia de señales y detectar discrepancias por ajustes, zona horaria o inicialización numérica. :contentReference[oaicite:10]{index=10}
+   - cruces MACD. :  
+4. **Validación visual y comparativa con TradingView** para verificar coincidencia de señales y detectar discrepancias por ajustes, zona horaria o inicialización numérica. :  
 
 ---
 
 ## Estructura general del proyecto
 
-La arquitectura propuesta en el Entregable 1 plantea una organización modular como la siguiente: :contentReference[oaicite:11]{index=11}
+La arquitectura propuesta en el Entregable 1 plantea una organización modular como la siguiente: : 
 
 ```text
 backtesting-project/
